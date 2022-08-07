@@ -1,0 +1,10 @@
+[package]
+name = "wasmedge_reqwest_demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = {git = "https://github.com/MediosZ/reqwest.git", branch = "wasmedge"}
+tokio = { git="https://github.com/WasmEdge/tokio.git", branch = "wasmedge", features=["rt", "macros", "net", "time"]}
