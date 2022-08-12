@@ -99,7 +99,7 @@ dependencies = [
 [[package]]
 name = "h2"
 version = "0.3.13"
-source = "git+https://github.com/MediosZ/h2.git?branch=wasmedge#89920a337a9ac97e2cef41add0e36f08c2219db9"
+source = "git+https://github.com/WasmEdge/h2.git?branch=wasmedge#89920a337a9ac97e2cef41add0e36f08c2219db9"
 dependencies = [
  "bytes",
  "fnv",
@@ -178,7 +178,7 @@ checksum = "c4a1e36c821dbe04574f602848a19f742f4fb3c98d40449f11bcad18d6b17421"
 [[package]]
 name = "hyper"
 version = "1.0.0-dev.0"
-source = "git+https://github.com/MediosZ/hyper.git?branch=master#e3448fb1dd74b7b58d787d8f35dc712e43924f9b"
+source = "git+https://github.com/WasmEdge/hyper.git?branch=wasmedge#4e935f24cf72e115c86eaddbe8e54e8ad683f5cb"
 dependencies = [
  "bytes",
  "futures-channel",
@@ -249,9 +249,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "libc"
-version = "0.2.127"
+version = "0.2.129"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "505e71a4706fa491e9b1b55f51b95d4037d0821ee40131190475f692b35b009b"
+checksum = "64de3cc433455c14174d42e554d4027ee631c4d046d43e3ecc6efc4636cdc7a7"
 
 [[package]]
 name = "log"
@@ -283,7 +283,7 @@ checksum = "2a60c7ce501c71e03a9c9c0d35b861413ae925bd979cc7a4e30d060069aaac8d"
 [[package]]
 name = "mio"
 version = "0.8.3"
-source = "git+https://github.com/WasmEdge/mio.git?branch=wasmedge#193f99c7aa803c099e5c7ee6002068f50f2c5fb5"
+source = "git+https://github.com/WasmEdge/mio.git?branch=wasmedge#47d90badbd574da60b5dad3dad29cb6675ef9041"
 dependencies = [
  "libc",
  "log",
@@ -337,7 +337,7 @@ dependencies = [
 [[package]]
 name = "reqwest"
 version = "0.11.11"
-source = "git+https://github.com/MediosZ/reqwest.git?branch=wasmedge#0b37062ee9da45f1d8ef0d58fa5c501b4736cb7a"
+source = "git+https://github.com/WasmEdge/reqwest.git?branch=wasmedge#6d920d5eb683496750c472f0a2413c35121563c3"
 dependencies = [
  "base64",
  "bytes",
@@ -375,9 +375,9 @@ checksum = "4501abdff3ae82a1c1b477a17252eb69cee9e66eb915c1abaa4f44d873df9f09"
 
 [[package]]
 name = "serde"
-version = "1.0.142"
+version = "1.0.143"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e590c437916fb6b221e1d00df6e3294f3fccd70ca7e92541c475d6ed6ef5fee2"
+checksum = "53e8e5d5b70924f74ff5c6d64d9a5acd91422117c60f48c4e07855238a254553"
 
 [[package]]
 name = "serde_json"
@@ -627,6 +627,7 @@ checksum = "6598dd0bd3c7d51095ff6531a5b23e02acdc81804e30d8f07afb77b7215a140a"
 name = "wasmedge_reqwest_demo"
 version = "0.1.0"
 dependencies = [
+ "hyper",
  "reqwest",
  "tokio",
 ]

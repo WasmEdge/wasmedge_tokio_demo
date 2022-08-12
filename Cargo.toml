@@ -6,5 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-reqwest = {git = "https://github.com/MediosZ/reqwest.git", branch = "wasmedge"}
-tokio = { git="https://github.com/WasmEdge/tokio.git", branch = "wasmedge", features=["rt", "macros", "net", "time"]}
+hyper = {git = "https://github.com/WasmEdge/hyper.git", branch = "wasmedge", features = ["http1", "server"]}
+reqwest = {git = "https://github.com/WasmEdge/reqwest.git", branch = "wasmedge"}
+tokio = { git="https://github.com/WasmEdge/tokio.git", branch = "wasmedge", features = ["rt", "macros", "net", "time"]}

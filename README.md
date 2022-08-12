@@ -54,7 +54,7 @@ cargo build --target wasm32-wasi
 Then we can run it using WasmEdge.
 
 ```bash
-wasmedge target/wasm32-wasi/debug/wasmedge_reqwest_demo.wasm
+wasmedge target/wasm32-wasi/debug/wasmedge_reqwest_demo.wasm <url>
 ```
 
 For simpilicity, we can add the following configs to `.cargo/config.toml`.
@@ -67,4 +67,11 @@ target="wasm32-wasi"
 runner = "wasmedge"
 ```
 
-And then we can use `cargo run` to execute it directly.
+And then we can use `cargo run <url>` to execute it directly.
+
+## Hyper server
+
+We have an example showing how to setup an echo server using `hyper` in `src/bin/server.rs`.
+
+We can run it with `cargo r --bin server` and open `http://127.0.0.1:3000` in the browser.
+Or just run `cargo r --bin client` to receive the response.
