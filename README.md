@@ -75,3 +75,12 @@ We have an example showing how to setup an echo server using `hyper` in `src/bin
 
 We can run it with `cargo r --bin server` and open `http://127.0.0.1:3000` in the browser.
 Or just run `cargo r --bin client` to receive the response.
+
+# FAQ
+
+## use of unstable library feature 'wasi_ext'
+
+If you are using rustc 1.64, you may encounter this error. There are two options:
+
+1. Update rustc to newer version. Validated versions are `1.65` and `1.59`.
+2. Add `#![feature(wasi_ext)]` to the top of `mio/src/lib.rs`.
